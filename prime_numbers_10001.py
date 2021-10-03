@@ -1,35 +1,18 @@
-a = list(range(0,3,1))
-b= list( range(0, 3,1))
-#a=[0,1,2]
-#b=[0,1,2]
-philosophy =[]
-university = []
-for item in a:
-    for items in b:
-        philosophy.append(item)
-        philosophy.append(items)
-        #print(item,items)     
-        university.append(philosophy)
-        philosophy =[]
+Philosophy = []
 
-difficulty = []
-abscess = 0
-#print(university)
-
-artificial = 0
-
-cancer = 1
-for disease in university:
-         verification = university.index(disease)
-         while disease[0] != university[len(university)-1][0]:
-                  print(disease, university [verification -1])
-                  artificial += cancer
-                  disease [0] += cancer
-
-                 # print(artificial , 210012210)
-
-      
-      
+diseases = 2
 
 
-print((abscess , artificial ))
+
+while len(Philosophy) < 10001:
+        management = diseases
+        inflammation = diseases -1
+        while diseases  % inflammation != 0:
+              inflammation -=1
+        diseases += 1 
+        if inflammation == 1:
+              Philosophy.append( management  )
+
+for hand in Philosophy:
+  print( hand)
+#Print philosophy[10000]
