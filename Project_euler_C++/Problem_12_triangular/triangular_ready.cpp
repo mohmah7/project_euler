@@ -8,10 +8,10 @@ int main() {
   int division_number = 0;
   int new_remainder_division = 0;
   int length_of_division_list = 0;
-  std::vector<int> v = { };
-  std::vector<int> triangular_list ={};
-  std::vector<int> division_list ={};
-  while (length_of_division_list < 10) {
+  std::vector<int> v;
+  std::vector<int> triangular_list;
+  std::vector<int> division_list;
+  while (length_of_division_list < 500) {
     //cout << i << "\n";
     //cout << "*\n";
     v.push_back(i);
@@ -39,8 +39,8 @@ int main() {
    	//cout << division_list.size() << "\n";
     length_of_division_list = division_list.size();
     cout << "number is :" <<new_number << "\n";
-    cout << "number of divisions is :" <<length_of_division_list << "\n";
-    division_list ={};
+    cout << "number of divisisors is :" <<length_of_division_list << "\n";
+    division_list = std::vector<int>();
     new_number = 0;
     i++;
   }
